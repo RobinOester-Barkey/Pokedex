@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-image: url('./img/desktop-wallpaper-you-haven-t-played-these-pokemon-games-but-you-should-pokemon-gba.jpg');
+    background-position: center;
+}
+
+body.detailView_open {
+    overflow: hidden;
+    position: fixed;
+}
+
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A2A29C;
+    color: white;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+h2 {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin: 0;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.inputField input {
+    height: 28px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#pokedex {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.single_pokemon {
+    margin: 15px;
+    padding: 20px;
+    width: 260px;
+    height: 190px;
+    border-radius: 20px;
+    border: solid 4px transparent
+}
+
+.single_pokemon:hover {
+    cursor: pointer;
+    border: solid 4px black
+}
+
+.pokemon_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.pokemonImage img {
+    height: 140px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.loadMore {
+    width: 200px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FF1A1A;
+    color: white;
+}
+
+.loadMore:hover {
+    cursor: pointer;
+}
+
+.detailView_bg {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailView {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px black;
+    height: 550px;
+}
+
+.detailView_window img {
+    height: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.close_detailView {
+    text-align: center;
+}
+
+.detailView_window img:hover {
+    cursor: pointer;
+}
+
+.details_header {
+    border-radius: 20px;
+    color: white;
+}
+
+.details_name {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.details_type {
+    display: flex;
+    justify-content: center;
+
+}
+
+.details_type p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.details_image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pokemon_image img {
+    height: 190px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.pokemon_image img {
+    cursor: auto !important;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.stats-label {
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.stats-value {
+    padding: 8px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.stats-value:last-child {
+    border-bottom: none;
+}
+
+.grass {
+    background-color: #4A9C47;
+}
+
+.fire {
+    background-color: #D12B00;
+}
+
+.water {
+    background-color: #2273A8;
+}
+
+.bug {
+    background-color: #7DAB24;
+}
+
+.normal {
+    background-color: #A2A29C;
+}
+
+.poison {
+    background-color: #7B3DA2;
+}
+
+.fairy {
+    background-color: #D36AD6;
+}
+
+.ground {
+    background-color: #8F5B26;
+}
+
+.fighting {
+    background-color: #A74131;
+}
+
+.psychic {
+    background-color: #D34F66; 
+}
+
+.rock {
+    background-color: #9E934F; 
+}
+
+.electric {
+    background-color: #D8B000; 
+}
+
+.ghost {
+    background-color: #5B3667;
+}
+
+.ice {
+    background-color: #60A599; 
+}
+
+.dragon {
+    background-color: #3F5A8A; 
+}
+
+.dark {
+    background-color: #403535; 
+}
+
+.steel {
+    background-color: #878787; 
+}
+
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A2A29C;
+    color: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="html.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/luxuryball.png">
+    
+
+    <title>Pokedex</title>
+
+<body onload="render()">
+    <div>
+        <div id="detailView" class="detailView_bg none" onclick="closeDetailView()">
+
+        </div>
+        <header>
+            <div class="headerLogo">
+                    <img src="./img/luxuryball.png" alt="">
+                    <h1>Pokedex</h1>
+                    <img src="./img/repeatball.png" alt="">
+            </div>
+            <div class="inputField">
+                <input onkeyup="checkInputLength()" id="searchPokemon" type="text" placeholder="Nach Pokemon suchen">
+            </div>
+        </header>
+
+        <div id="pokedex">
+
+        </div>
+
+        <div id="loadMore" class="btn_container">
+            <button onclick="loadMorePokemon()" class="loadMore">Weitere Pokemon laden</button>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <h4>
+        Copyright 2024 | Datenschutz
+    </h4>
+</footer>
+
+</html>
